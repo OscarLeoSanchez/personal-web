@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
+import { RenderMarkdownComponent } from './components/render-markdown/render-markdown.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RouterModule } from '@angular/router';
     ContactMeComponent,
     HomeComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    RenderMarkdownComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { RouterModule } from '@angular/router';
       { path: 'about-me', component: AboutMeComponent },
       { path: 'contact', component: ContactMeComponent },
       { path: 'blog', component: BlogComponent },
+      { path: 'md', component: RenderMarkdownComponent },
       { path: '**', component: PageNotFoundComponent }
     ])
   ],
